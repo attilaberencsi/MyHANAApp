@@ -55,7 +55,8 @@
           "dest": "../db"
         },
         {
-          "for": "node-cf"
+          "for": "node-cf",
+          "dest": "../srv"
         }
       ]
     },
