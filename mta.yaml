@@ -1,7 +1,7 @@
 _schema-version: '3.1'
 ID: MyHANAApp
 version: 1.0.0
-description: "A simple CAP project."
+description: "Testing out proper deployment"
 parameters:
   enable-parallel-deployments: true
 build-parameters:
@@ -26,7 +26,7 @@ modules:
 
   - name: MyHANAApp-db-deployer
     type: hdb
-    path: gen/db
+    path: db ## gen/db switched to db because of HAHA development
     parameters:
       buildpack: nodejs_buildpack
     requires:
