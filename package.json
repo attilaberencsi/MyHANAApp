@@ -1,15 +1,18 @@
 {
     "name": "MyHANAApp",
-    "version": "1.0.0",
+    "version": "1.0.3",
     "description": "A simple CAP project.",
     "repository": "<Add your repository here>",
     "license": "UNLICENSED",
     "private": true,
     "dependencies": {
-        "@sap/cds": "^6.3.2",
-        "@sap/hana-client": "^2.14.24",
-        "express": "^4.18.2",
-        "hdb": "^0.19.5"
+        "@sap/cds": ">=6",
+        "@sap/cds-dk": "6.1.2",
+        "@sap/cds-odata-v2-adapter-proxy": "^1.9.1",
+        "@sap/hana-client": "^2.13.22",
+        "@sap/xssec": "^3.2.13",
+        "express": "^4.18.1",
+        "passport": "^0.6.0"
     },
     "devDependencies": {
         "@sap/approuter": "^12.0.2",
@@ -60,7 +63,7 @@
                     "dest": "../db"
                 },
                 {
-                    "for": "node-cf",
+                    "for": "node-cf" ,
                     "dest": "../srv"
                 }
             ]
